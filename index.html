@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnerCharm</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', 'Open Sans', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff3f3;
+            color: #636363;
+        }
+        .navbar, .footer {
+            background-color: #666666;
+            color: #fff;
+        }
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .header {
+            background: url('https://i.hizliresim.com/sualfls.jpg') no-repeat center center;
+            background-size: cover;
+            color: #3f3f3f;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+        .header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin: 0;
+        }
+        .header p {
+            margin: 10px 0;
+        }
+        .discover-btn {
+            padding: 10px 20px;
+            background-color: white;
+            color: #636363;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+            margin-top: 20px;
+        }
+        .discover-btn:hover {
+            background-color: #636363;
+            color: white;
+        }
+        .section-content {
+            padding: 40px;
+            margin: 20px 0;
+            background-color: #f3f3f3;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .section-heading {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #363636;
+        }
+        .logo {
+            display: none;
+        }
+        .social-icons a {
+            color: #fff;
+            margin: 0 10px;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+        .social-icons a:hover {
+            color: #464646;
+        }
+        .footer__section-head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+        }
+        .footer__section-content {
+            display: none;
+            text-align: center;
+        }
+        .footer__section-content.open {
+            display: block;
+        }
+        .footer__section-btn {
+            width: 20px;
+            height: 20px;
+        }
+        .footer__section-btn svg {
+            width: 20px;
+            height: 20px;
+            fill: white;
+        }
+        .list-unstyled {
+            padding: 0;
+            margin: 0;
+            list-style: none.
+        }
+        .list-unstyled li {
+            margin-bottom: 10px;
+        }
+        .list-unstyled li a {
+            text-decoration: none;
+            color: #f3f3f3;
+        }
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 2.5rem.
+            }
+            .section-content {
+                padding: 20px;
+            }
+            .section-heading {
+                font-size: 2rem;
+            }
+            .social-icons a {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>InnerCharm'a Hoşgeldiniz</h1>
+            <p>Her detayda mükemmellik sunuyoruz</p>
+            <button class="discover-btn" onclick="window.location.href='http://localhost:8158/Sonson.html'">Keşfetmek</button>
+        </div>
+    </header>
+    <nav class="navbar" role="navigation">
+        <div class="nav-wrapper container">
+            <a href="#" class="brand-logo">
+                <img src="https://i.hizliresim.com/rykl7n0.jpg" alt="InnerCharm Logo" style="height: 55px;">
+            </a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#home">Ana Sayfa</a></li>
+                <li><a href="http://localhost:8158/Our-story.html">Hakkında</a></li>
+                <li><a href="#products">Ürünler</a></li>
+                <li><a href="#contact">İletişim</a></li>
+                <li><a href="http://localhost:8158/Yeni.html">Yeni Gelenler</a></li>
+            </ul>
+        </div>
+    </nav>
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="#home">Ana Sayfa</a></li>
+        <li><a href="http://localhost:8158/Our-story.html">Hakkında</a></li>
+        <li><a href="#products">Ürünler</a></li>
+        <li><a href="#contact">İletişim</a></li>
+        <li><a href="http://localhost:8158/Yeni.html">Yeni Gelenler</a></li>
+    </ul>
+    <main class="container">
+        <section id="home" class="section-content">
+            <p>Son koleksiyonlarımızı keşfedin!</p>
+            <img src="https://i.hizliresim.com/g4srr9h.jpg" alt="Çikolatalı İç Çamaşırı" class="responsive-img mt-4">
+            <h5>Çikolatalı Lezzet</h5>
+        </section>
+        <section id="products" class="section-content">
+            <h2 class="section-heading">Ürünler</h2>
+            <div class="row">
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://i.hizliresim.com/pmy4dfw.jpg" alt="Dantelli Siyah">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Dantelli Siyah</span>
+                            <p>$98.00</p>
+                            <div class="chip">S</div>
+                            <div class="chip">M</div>
+                            <button class="btn btn-primary" onclick="window.location.href='http://localhost:8158/Payment.html'">Satın Al</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://i.hizliresim.com/g4srr9h.jpg" alt="Çikolatalı İç Çamaşırı">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Çikolatalı İç Çamaşırı</span>
+                            <p>$98.00</p>
+                            <div class="chip">S</div>
+                            <div class="chip">M</div>
+                            <button class="btn btn-primary" onclick="window.location.href='http://localhost:8158/Payment.html'">Satın Al</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="section-content">
+            <h2 class="section-heading">İletişim</h2>
+            <p>Bizimle iletişime geçin. Sizinle bağlantı kurmayı dört gözle bekliyoruz!</p>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m6">
+                    <h5 class="white-text">Mağaza Navigasyonu</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="http://localhost:8158/Yeni.html" class="white-text">Yeni Gelenler</a></li>
+                        <li><a href="/collections/dresses" class="white-text">Elbiseler</a></li>
+                        <li><a href="/collections/clothing" class="white-text">Mağaza Giyim</a></li>
+                        <li><a href="/collections/accessories" class="white-text">Mağaza Aksesuarları</a></li>
+                        <li><a href="http://localhost:8158/Our-story.html" class="white-text">Hakkımızda</a></li>
+                    </ul>
+                </div>
+                <div class="col s12 m6">
+                    <h5 class="white-text">Faydalı Bağlantılar</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="/pages/request-a-return" class="white-text">İade Talebinde Bulunun</a></li>
+                        <li><a href="/pages/contact-us" class="white-text">Bize Ulaşın</a></li>
+                        <li><a href="#" class="white-text">Kullanım Şartları</a></li>
+                        <li><a href="#" class="white-text">Gizlilik Politikası</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+        });
+
+        function toggleAccordion(element) {
+            var content = element.nextElementSibling;
+            var iconPlus = element.querySelector('.icon-plus');
+            var iconMinus = element.querySelector('.icon-minus');
+            if (content.classList.contains('open')) {
+                content.classList.remove('open');
+                iconPlus.style.display = 'block';
+                iconMinus.style.display = 'none';
+            } else {
+                content.classList.add('open');
+                iconPlus.style.display = 'none';
+                iconMinus.style.display = 'block';
+            }
+        }
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

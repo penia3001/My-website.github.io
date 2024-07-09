@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnerCharm - İç Giyimde Zarafet ve Şıklık</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #fff;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .hero {
+            background-image: url('https://i.hizliresim.com/k2bys0k.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 70vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        .category h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            font-size: 2.5rem;
+            text-align: center;
+            color: #333;
+        }
+
+        .product:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-custom {
+            background-color: #ff6347;
+            color: white;
+            font-weight: bold;
+            border-radius: 25px;
+            padding: 10px 20px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .btn-custom:hover {
+            background-color: #e5533d;
+            transform: scale(1.05);
+        }
+
+        .card-img-top {
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+        }
+
+        .card {
+            border-radius: 25px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="bg-light py-3 shadow-sm">
+        <div class="container text-center">
+            <img src="https://i.hizliresim.com/7k5dkyb.JPG" alt="InnerCharm Logo" class="img-fluid mx-auto d-block" style="width: 300px;">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light mt-3">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#klot">Yeni Gelenler</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#bikini">Bikini Reyonu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#sutyen">Sütyen Reyonu</a>
+                            </li>
+                            <!-- Add more categories here -->
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-overlay">
+            <h1>İç Güzelliğinizi Keşfedin</h1>
+            <p>InnerCharm ile iç giyimde zarafet ve şıklığı keşfedin. En sevdiğiniz ürünleri keşfetmeye başlayın!</p>
+            <a href="#klot" class="btn btn-primary btn-lg">Hemen Alışverişe Başla</a>
+        </div>
+    </section>
+
+    <main>
+        <div class="container">
+            <section id="klot" class="category py-5">
+                <h2>Yeni Gelenler</h2>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card h-100 text-center">
+                            <img src="https://i.hizliresim.com/fr2mpzu.jpg" alt="Yenilebilir İç Çamaşırı - Portakallı" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Yenilebilir İç Çamaşırı - Portakallı</h5>
+                                <p class="card-text text-muted">29.99 TL</p>
+                                <a href="http://localhost:8158/Payment.html" class="btn btn-custom">Satın Al</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 text-center">
+                            <img src="https://i.hizliresim.com/g4srr9h.jpg" alt="Yenilebilir İç Çamaşırı - Çikolatalı" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Yenilebilir İç Çamaşırı - Çikolatalı</h5>
+                                <p class="card-text text-muted">39.99 TL</p>
+                                <a href="http://localhost:8158/Payment.html" class="btn btn-custom">Satın Al</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more Yeni Gelenler products here -->
+                </div>
+            </section>
+
+            <section id="bikini" class="category py-5">
+                <h2>Bikini Reyonu</h2>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card h-100 text-center">
+                            <img src="https://i.hizliresim.com/tsjb9ui.jpg" alt="Yenilebilir İç Çamaşırı - Bal Aromalı" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Yenilebilir İç Çamaşırı - Bal Aromalı</h5>
+                                <p class="card-text text-muted">49.99 TL</p>
+                                <a href="http://localhost:8158/Payment.html" class="btn btn-custom">Satın Al</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 text-center">
+                            <img src="https://s.alicdn.com/@sc04/kf/H52538be4783447b19217740320d7ab11a.jpg" alt="Sportif Sütyen" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Sportif Sütyen</h5>
+                                <p class="card-text text-muted">59.99 TL</p>
+                                <a href="http://localhost:8158/Payment.html" class="btn btn-custom">Satın Al</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 text-center">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFFmGvgjP7lfwIzK6jniuLCF9KW2xMSxT2W2yzaT96SdxjRr5lDqgUHk4&s=10" alt="Push Up Sütyen Reyonu" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Push Up Sütyen Reyonu</h5>
+                                <p class="card-text text-muted">69.99 TL</p>
+                                <a href="http://localhost:8158/Payment.html" class="btn btn-custom">Satın Al</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more bikini products here -->
+                </div>
+            </section>
+
+            <section id="sutyen" class="category py-5">
+                <h2>Sütyen Reyonu</h2>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card h-100 text-center">
+                            <img src="https://i.hizliresim.com/skq9b32.jpg" alt="Dantelli Sütyen" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Dantelli Sütyen</h5>
+                                <p class="card-text text-muted">69.99 TL</p>
+                                <a href="http://localhost:8158/Payment.html" class="btn btn-custom">Satın Al</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 text-center">
+                            <img src="https://i.hizliresim.com/sjzwbqp.jpg" alt="Balon Kollu Sütyen" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Balon Kollu Sütyen</h5>
+                                <p class="card-text text-muted">79.99 TL</p>
+                                <a href="http://localhost:8158/Payment.html" class="btn btn-custom">Satın Al</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more bra products here -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-light text-center py-3">
+        <div class="container">
+            <p>&copy; 2024 InnerCharm - Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
